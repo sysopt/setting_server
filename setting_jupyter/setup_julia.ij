@@ -1,0 +1,37 @@
+using Pkg
+
+Pkg.add("IJulia") # tạo kết nối giữa Julia backend với Jupyter
+
+Pkg.add("JuMP") # optimization toolbox (https://jump.dev/JuMP.jl/stable/installation/)
+
+Pkg.add("AmplNLWriter") # to use solvers with AMPL interface https://github.com/jump-dev/AmplNLWriter.jl
+
+Pkg.add("Bonmin_jll") # optimization solver Bonmin
+
+Pkg.add("Couenne_jll") # solver Couenne
+
+Pkg.add("Cbc") # solver Cbc
+
+Pkg.add("Clp") # solver Clp
+
+Pkg.add("ECOS") # solver ECOS
+
+Pkg.add("GLPK") # solver GLPK
+
+Pkg.add("HiGHS") # solver HiGHS
+
+Pkg.add("Ipopt") # solver Ipopt
+
+Pkg.add("SCIP") # solver SCIP
+
+Pkg.add("Juniper") # solver Juniper
+
+Pkg.add("OSQP") # solver OSQP
+
+Pkg.add("NLopt") # solver NLopt
+
+Pkg.add("DataFrames") # to deal with data in examples
+
+Pkg.add("CSV") # to deal with CSV data in examples
+
+Pkg.add("Plots") # plotting
