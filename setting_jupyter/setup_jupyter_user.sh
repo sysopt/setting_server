@@ -24,9 +24,9 @@ adduser $NEWUSER
 
 cp jupyter.toiuu.net /etc/nginx/sites-available/$DOMAINNAME
 
-sed -i 's/jupyter.toiuu.net/$DOMAINNAME/g' /etc/nginx/sites-available/$DOMAINNAME
+sed -i "s/jupyter.toiuu.net/$DOMAINNAME/g" /etc/nginx/sites-available/$DOMAINNAME
 
-sed -i 's/8888/$PORTNUMBER/g' /etc/nginx/sites-available/$DOMAINNAME
+sed -i "s/8888/$PORTNUMBER/g" /etc/nginx/sites-available/$DOMAINNAME
 
 rm /etc/nginx/sites-enabled/$DOMAINNAME
 
@@ -38,7 +38,7 @@ systemctl restart nginx
 
 cp -r .jupyter /home/$NEWUSER/
 
-sed -i 's/8888/$PORTNUMBER/g' /home/$NEWUSER/.jupyter/jupyter_notebook_config.py
+sed -i "s/8888/$PORTNUMBER/g" /home/$NEWUSER/.jupyter/jupyter_notebook_config.py
 
 chown -R $NEWUSER:$NEWUSER /home/$NEWUSER/.jupyter/
 
